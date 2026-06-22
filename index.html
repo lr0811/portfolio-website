@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前端作品集</title>
+  <meta name="description" content="前端开发作品集 demo，展示个人简介、项目、技能和联系信息。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">作品集</a>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="切换深色模式">🌙</button>
+        <button class="nav-toggle" aria-label="切换导航菜单">☰</button>
+      </div>
+      <nav class="site-nav">
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section reveal">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">前端开发 | HTML / CSS / JavaScript</p>
+          <h1>你好，我是张三，专注于漂亮且可用的网页界面。</h1>
+          <p>拥有响应式布局、交互动画与页面性能优化经验，致力于将设计变成高质量的前端实现。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">查看项目</a>
+            <a class="btn btn-secondary" href="#contact">联系我</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__inner">
+            <h2>项目亮点</h2>
+            <ul>
+              <li>响应式多终端页面</li>
+              <li>交互式项目展示</li>
+              <li>轻量动画与可访问菜单</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-section reveal">
+      <div class="container section-grid">
+        <div>
+          <span class="section-label">关于我</span>
+          <h2>一名前端开发实习生/初级工程师</h2>
+          <p>我善于将设计稿转成现代网页，关注性能与可维护性。熟悉原生 HTML、CSS、JavaScript，实现自适应页面与交互体验。</p>
+          <p>我喜欢把用户体验作为第一优先项，认真处理布局、动画、可访问性和跨浏览器兼容问题。</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <h3>3+</h3>
+            <p>完整项目</p>
+          </article>
+          <article class="stat-card">
+            <h3>95%</h3>
+            <p>页面性能评分</p>
+          </article>
+          <article class="stat-card">
+            <h3>100%</h3>
+            <p>响应式支持</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-section section-alt reveal">
+      <div class="container">
+        <span class="section-label">项目展示</span>
+        <h2>精选项目</h2>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card__image">项目截图</div>
+            <h3>响应式产品展示页</h3>
+            <p>一个适配 PC 和移动端的商品展示页面，带过滤、交互卡片和购买流程引导。</p>
+            <div class="project-card__footer">
+              <p class="project-tags">HTML · CSS · JavaScript</p>
+              <button class="project-detail-btn" data-project="responsive-shop">查看案例</button>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__image">项目截图</div>
+            <h3>个人简历页面</h3>
+            <p>使用语义标签和模块化样式实现的个人简历页面，支持打印和深色模式切换。</p>
+            <div class="project-card__footer">
+              <p class="project-tags">HTML · CSS · 交互动画</p>
+              <button class="project-detail-btn" data-project="resume-page">查看案例</button>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__image">项目截图</div>
+            <h3>动态任务清单</h3>
+            <p>一个可新增、编辑、完成与本地保存的待办应用，演示状态管理与表单交互。</p>
+            <div class="project-card__footer">
+              <p class="project-tags">HTML · CSS · JavaScript</p>
+              <button class="project-detail-btn" data-project="todo-app">查看案例</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal__content" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+        <button class="modal-close" aria-label="关闭项目详情">×</button>
+        <span class="section-label">项目详情</span>
+        <h3 id="projectModalTitle"></h3>
+        <p class="project-modal__description"></p>
+        <ul class="project-modal__list"></ul>
+        <div class="project-modal__footer">
+          <p class="project-modal__tech"></p>
+          <div class="project-modal__links"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="skills" class="section-section reveal">
+      <div class="container">
+        <span class="section-label">技术栈</span>
+        <h2>我会使用的技术</h2>
+        <div class="skills-grid">
+          <div class="skill-pill">HTML5</div>
+          <div class="skill-pill">CSS3</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">响应式设计</div>
+          <div class="skill-pill">Flexbox / Grid</div>
+          <div class="skill-pill">网页性能优化</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-section section-alt reveal">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">联系我</span>
+          <h2>一起做出优秀的前端页面</h2>
+          <p>如果你想了解我的项目经验或合作开发前端页面，欢迎通过下面方式联系我。</p>
+          <ul class="contact-list">
+            <li>邮箱：<a href="mailto:example@mail.com">example@mail.com</a></li>
+            <li>电话：123-4567-8901</li>
+            <li>GitHub：<a href="https://github.com/" target="_blank">github.com/你的用户名</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" action="mailto:example@mail.com" method="post" enctype="text/plain">
+          <label>
+            名称
+            <input type="text" name="name" placeholder="你的名字" required />
+          </label>
+          <label>
+            邮箱
+            <input type="email" name="email" placeholder="你的邮箱" required />
+          </label>
+          <label>
+            信息
+            <textarea name="message" rows="5" placeholder="给我留言..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">发送邮件</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>版权所有 © 2026 前端作品集</p>
+      <p>使用纯 HTML / CSS / JavaScript 构建</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
