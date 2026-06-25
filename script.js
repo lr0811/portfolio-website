@@ -54,7 +54,7 @@ const projectData = {
       '高质量视觉层次和按钮状态反馈'
     ],
     tech: 'HTML · CSS · JavaScript',
-    links: '<a href="https://github.com/你的用户名" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
+    links: '<a href="https://github.com/lr0811/portfolio-website" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
   },
   'resume-page': {
     title: '个人简历页面',
@@ -65,7 +65,7 @@ const projectData = {
       '主题切换与现代排版设计'
     ],
     tech: 'HTML · CSS · 交互动画',
-    links: '<a href="https://github.com/你的用户名" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
+    links: '<a href="https://github.com/lr0811/portfolio-website" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
   },
   'todo-app': {
     title: '动态任务清单',
@@ -76,7 +76,7 @@ const projectData = {
       '清晰的交互反馈和布局设计'
     ],
     tech: 'HTML · CSS · JavaScript',
-    links: '<a href="https://github.com/你的用户名" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
+    links: '<a href="https://github.com/lr0811/portfolio-website" target="_blank" rel="noreferrer">查看源码</a> | <a href="#projects">实时演示</a>'
   }
 };
 
