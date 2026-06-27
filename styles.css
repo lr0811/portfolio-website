@@ -252,6 +252,30 @@ textarea {
   gap: 1rem;
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.experience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 1.6rem;
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  color: var(--text);
+}
+
+.experience-card p {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+}
+
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
